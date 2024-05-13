@@ -52,7 +52,9 @@ function getVersionInfo( )
         {
             if ( ( data.status == "OK" ) && ( data.config.version ) )
             {
-                $('#version').html( " :: " + data.config.version );
+                var d4 = document.ElementById("#version");
+                d4.innerhtml( " :: " + data.config.version );
+                //$('#version').html( " :: " + data.config.version );
             }
         }
     } );
