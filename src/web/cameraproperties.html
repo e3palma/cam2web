@@ -50,8 +50,9 @@ function resetToDefaults( )
                 }
             }
         }
-        
-        $( "#properties_list" ).html( propertiesHtml ).trigger( 'create' );
+        var d3 = document.ElementById("#properties_list");
+        d3.innerhtml( propertiesHtml ).trigger( 'create' );
+        //$( "#properties_list" ).html( propertiesHtml ).trigger( 'create' );
         $( "#properties" ).show( );
     }
 }
@@ -103,8 +104,11 @@ function showSettings( )
                 propertiesHtml += propertyHtml;
             }
         }
-        
-        $( "#properties_list" ).html( propertiesHtml ).trigger( 'create' );
+        var d3 = document.ElementById("#properties_list");
+        d3.innerhtml( propertiesHtml ).trigger( 'create' );
+
+     
+        //$( "#properties_list" ).html( propertiesHtml ).trigger( 'create' );
         $( "#properties" ).show( );
     }
 }
